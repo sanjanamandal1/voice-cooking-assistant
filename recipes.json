@@ -1,0 +1,14 @@
+{
+  "Pasta": {
+    "steps": ["Boil water", "Add pasta", "Mix sauce", "Serve hot"],
+    "images": ["images/step1.jpg","images/step2.jpg","images/step3.jpg","images/final.jpg"],
+    "ingredients": ["100g pasta", "200ml sauce"],
+    "servings": 2
+  },
+  "Tea": {
+    "steps": ["Boil water", "Add tea leaves", "Add milk and sugar", "Serve hot"],
+    "images": ["images/tea1.jpg","images/tea2.jpg","images/tea3.jpg","images/tea4.jpg"],
+    "ingredients": ["200ml water", "5g tea leaves", "50ml milk", "2 tsp sugar"],
+    "servings": 1
+  }
+}
