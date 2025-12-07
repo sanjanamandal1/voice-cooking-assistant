@@ -41,7 +41,7 @@ base_servings = recipes[selected_recipe].get("servings", 1)
 # -----------------------------
 # Static Layout (non-flickering)
 # -----------------------------
-st.title("🎤 Advanced Voice-Controlled Cooking Assistant")
+st.title("🎤 Your Assistant Chef ")
 st.write("Cook hands-free with images, timers, voice commands, and smart ingredient scaling!")
 
 col1, col2 = st.columns([1, 1])
