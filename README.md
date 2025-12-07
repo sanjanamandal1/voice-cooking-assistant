@@ -46,30 +46,30 @@ cd voice-cooking-assistant
 
 ## Usage
 
-Choose a recipe from the dropdown.
-Click Start Listening and say commands like:
-“Next Step” / “What’s the next step?”
-“Repeat”
-“Set timer 5 minutes”
-“Make 2 servings”
-“Stop”
+* Choose a recipe from the dropdown.
+* Click Start Listening and say commands like:
+* “Next Step” / “What’s the next step?”
+* “Repeat”
+* “Set timer 5 minutes”
+* “Make 2 servings”
+* “Stop”
 
 
 ## 💻 Tech Stack:
 
-Python
-Streamlit
-pyttsx3 (text-to-speech)
-SpeechRecognition
-pygame (background music)
-Pillow (image display)
-JSON (recipe storage)
+* Python
+* Streamlit
+* pyttsx3 (text-to-speech)
+* SpeechRecognition
+* pygame (background music)
+* Pillow (image display)
+* JSON (recipe storage)
 
 
 ## 🌐 Future Enhancements
 
-Multi-timer support
-More recipes and categories
-Smarter NLP commands
-Deploy on Streamlit Cloud for online demo
-Improved UI and progress tracking
+* Multi-timer support
+* More recipes and categories
+* Smarter NLP commands
+* Deploy on Streamlit Cloud for online demo
+* Improved UI and progress tracking
