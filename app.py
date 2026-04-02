@@ -26,6 +26,37 @@ if "music_playing" not in st.session_state:
 
 recognizer = sr.Recognizer()
 
+# -----------------------------
+# Load Recipes
+# -----------------------------
+with open("recipes.json") as file:
+    recipes = json.load(file)
+
+selected_recipe = st.selectbox("🍳 Choose a recipe", list(recipes.keys()))
+steps = recipes[selected_recipe]["steps"]
+images = recipes[selected_recipe]["images"]
+ingredients = recipes[selected_recipe].get("ingredients", [])
+base_servings = recipes[selected_recipe].get("servings", 1)
+
+# -----------------------------
+# Static Layout (non-flickering)
+# -----------------------------
+st.title("🎤 Advanced Voice-Controlled Cooking Assistant")
+st.write("Cook hands-free with images, timers, voice commands, and smart ingredient scaling!")
+
+col1, col2 = st.columns([1, 1])
+with col1:
+    try:
+        img = Image.open(images[st.session_state.step_index])
+        img = img.resize((400, 350))
+        col1.image(img)
+    except:
+        col1.warning("Image not found")
+with col2:
+    step_placeholder = col2.empty()
+    step_placeholder.write(f"### Step {st.session_state.step_index+1} / {len(steps)}")
+    step_placeholder.write(steps[st.session_state.step_index])
+
 timer_placeholder = st.empty()
 ingredient_placeholder = st.empty()
 progress_placeholder = st.empty()
