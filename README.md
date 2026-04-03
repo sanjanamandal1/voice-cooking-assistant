@@ -1,4 +1,4 @@
-<<<<<<< HEAD
+
 # Voice-Controlled Cooking Assistant
 
 Cook hands-free with a voice-controlled assistant that guides you through recipes step by step!
